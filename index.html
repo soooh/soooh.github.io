@@ -1,1 +1,162 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soo Oh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="icon"type="image/jpg" href="favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+    <style type="text/css">
+        a {color: #494546; font-weight: bold;}
+        
+        ul#menu a:hover {text-decoration: none; color: #000; background-color: #ccc;}
+        div.info {margin-bottom: 20px;}
+
+        div.project {margin: 0 0 20px; }
+        div.project h2 {margin: 0; font: 26px normal 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+        div.project div.description {margin: 0 0 10px; font-family: "Georgia", "Times New Roman", serif; color: #666; width: 750px;}
+        span.dev-label {font: bold 13px Arial, sans-serif; font-weight: }
+        div.project img {margin-right: 8px; vertical-align: text-top; max-height: 170px; border: 1px solid #bebebe;}
+        div.project img:last-child {margin-right: 0;}
+        div.project a:hover {opacity: 0.8; text-decoration: none;}
+        a.usual-suspects {font-weight: normal; border-bottom: 1px dotted #494546; color: #494546; }
+        div.popover {opacity: 0.5; color: #000; font: 11px 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+        /* Large desktop */
+        @media (min-width: 1200px) {  
+        }
+         
+        /* Portrait tablet to landscape and desktop */
+        @media (min-width: 768px) and (max-width: 979px) { 
+            div.project img {max-height: none; }
+            div.project div.description {width: auto;}
+        }
+         
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 767px) {
+            div.project img {max-height: none; }
+            ul#menu {margin-top: 15px;}
+            ul#menu a {background-color: #ddd;}
+
+            div.project div.description {width: auto;}
+
+        }
+         
+        /* Landscape phones and down */
+        @media (max-width: 480px) { 
+        }
+        
+
+    </style>
+
+    <div class="container-fluid">
+
+        <h1>Soo Oh</h1>
+        
+        <div class="row-fluid">
+            <div id="sidebar" class="span2">
+                <div class="row-fluid">
+                    <ul id="menu" class="nav nav-pills nav-stacked">
+                        <li><a href="mailto:soo.oh5[at]gmail.com">Email</a></li>
+                        <li><a href="http://twitter.com/soooh">Twitter</a></li>
+                        <li><a href="http://linkedin.com/in/soooh">LinkedIn</a></li>
+                        <li><a href="http://github.com/soooh">Github</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="span10">
+                <div class="row-fluid">
+                    <div class="info">I'm a producer-journalist at the Los Angeles Times. These are some projects I've worked on.</div>
+                </div>
+                <div class="project row-fluid">
+
+
+                    <h2>Buzzmeter</h2>
+                    <div class="description"><span class="dev-label">Entertainment news app</span> | <span class="dev-label">Frontend:</span> HTML, CSS, JavaScript, jQuery, Bootstrap | <span class="dev-label">Backend:</span> deep dive into custom Django admin (models, admin, widgets, forms) </div>
+                    <a href="http://www.latimes.com/buzzmeter">
+                        <img class="phone visible-desktop" src="img/portfolio/buzzmeter_1.jpg" />
+                        <img class="tablet visible-desktop" src="img/portfolio/buzzmeter_2.jpg" />
+                        <img class="netbook visible-desktop" src="img/portfolio/buzzmeter_3.jpg" />
+                        <img class="desktop" src="img/portfolio/buzzmeter_4.jpg" />
+                    </a>
+                </div>
+                <div class="project row-fluid">
+                    <h2>The Manhunt for Christopher Dorner</h2>
+                    <div class="description"><span class="dev-label">Online presentation for longform feature</span> | <span class="dev-label">Frontend:</span> Brightcove Video API, Bootstrap, HTML, CSS, JavaScript, jQuery</div>
+                    <a href="http://www.latimes.com/dorner">
+                        <img class="phone visible-desktop" src="img/portfolio/dorner_1.jpg" />
+                        <img class="tablet visible-desktop" src="img/portfolio/dorner_2.jpg" />
+                        <img class="netbook visible-desktop" src="img/portfolio/dorner_3.jpg" />
+                        <img class="desktop" src="img/portfolio/dorner_4.jpg" />
+                    </a>
+                </div>
+                <div class="project row-fluid">
+                    <h2>Guides</h2>
+                    <div class="description"><span class="dev-label">City and travel maps app</span> | <span class="dev-label">Frontend:</span> Leaflet, Bootstrap, Underscore.js, HTML, CSS, JavaScript, jQuery | <span class="dev-label">Backend:</span> introduction to Django models</div>
+                    <a href="http://guides.latimes.com/">
+                        <img class="phone visible-desktop" src="img/portfolio/guides_1.jpg" />
+                        <img class="tablet visible-desktop" src="img/portfolio/guides_2.jpg" />
+                        <img class="netbook visible-desktop"src="img/portfolio/guides_3.jpg" />
+                        <img class="desktop" src="img/portfolio/guides_4.jpg" />
+                    </a>
+                </div>
+            </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    
+    function nav_stack() {
+        // if window size is smaller than 768
+        if ($(window).width() <= 767) {
+            // unstack the menu
+            $("ul#menu").removeClass("nav-stacked");
+        } else {
+            $("ul#menu").addClass("nav-stacked");
+        } 
+    }
+    nav_stack();
+    debounced_nav_stack = _.debounce(nav_stack, 400);
+
+
+    $(document).ready(function(){
+        $('a.usual-suspects').popover({
+            trigger: "hover"
+        });
+
+        $(window).resize(function(){
+            debounced_nav_stack();
+        });
+    });
+
+
+    </script>
+
+
+</body>
+</html>
