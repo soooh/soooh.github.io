@@ -22,50 +22,48 @@
 
     <style type="text/css">
         a {color: #494546; }
-        a:hover {opacity: 0.6;}
+        a:hover {opacity: 0.6;color: #494546;}
+
+        body {overflow-x: hidden;}
 
         h1 {font: bold 44px 'Montserrat Subrayada', 'Montserrat', Arial, sans-serif; text-transform: uppercase;}
 
         ul#menu a {font-family: 'Montserrat', Arial, sans-serif; text-transform: uppercase;}
-        ul#menu a:hover {text-decoration: none; color: #000; background-color: transparent; font-family: 'Montserrat Subrayada', 'Montserrat', Arial, sans-serif;}
+        ul#menu a:hover {text-decoration: none; color: #000; background-color: transparent;}
         ul#menu li.resume {margin-bottom: 20px;}
         div.info {margin-bottom: 20px; font-family: "Inconsolata", Arial, sans-serif;}
 
-        div.project {margin: 0 0 40px; }
+        div.organization {}
+
+        div.project {margin: 0 8% 40px 0; width: 45%; float: left; }
+        div.project:nth-child(even) {margin-right: 0;}
         h2 {font: normal 28px 'Montserrat', Arial, sans-serif; margin: 0 0 28px; }
-        div.project h3 {margin: 0; font: bold 18px 'Montserrat', Arial, sans-serif; text-transform: uppercase; line-height: 1.5em; display: inline;}
-        div.project .title-description {font: 18px 'Montserrat', Arial, sans-serif; font-weight: normal;  border-left: 1px solid #adadad; margin-left: 10px; padding-left: 14px; color: #999;}
-        div.project .description {margin: 0 0 10px; font-family: "Inconsolata", Arial, sans-serif;  width: 750px; line-height: 1.3em;}
-        div.project .dev-label { }
-       
-        div.project img {margin-right: 8px; vertical-align: text-top; max-height: 170px; border: 1px solid #bebebe;}
-        div.project img:last-child {margin-right: 0;}
-        div.project a:hover {opacity: 0.8; text-decoration: none;}
-        a.usual-suspects {font-weight: normal; border-bottom: 1px dotted #494546; color: #494546; }
-        div.popover {opacity: 0.5; color: #000; font: 11px 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+        
+        div.project a {overflow: hidden;}
+        div.project a:hover {text-decoration: none;}
+        div.project h3 {margin: 0 0 1em; font: bold 18px 'Montserrat', Arial, sans-serif; text-transform: uppercase; line-height: 1.5em; display: block; }
+        div.project .description {font: 16px 'Montserrat', Arial, sans-serif; font-weight: normal;  border-left: 1px solid #adadad; margin-left: 10px; padding-left: 14px; color: #999; text-transform: none;}
+        div.project img {width: 100%; border: 1px solid #bebebe; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
         /* Large desktop */
         @media (min-width: 1200px) {  
         }
          
         /* Portrait tablet to landscape and desktop */
-        @media (min-width: 768px) and (max-width: 979px) { 
-            div.project img {max-height: none; }
-            div.project div.description {width: auto; }
+        @media (max-width: 979px) { 
+            div.project {width: 100%; float: none; margin-right: 0;}
         }
          
         /* Landscape phone to portrait tablet */
         @media (max-width: 767px) {
             div.project {margin: 0 0 23px; border-bottom: 1px dotted #adadad; padding-bottom: 30px;}
             div.project:last-child {border-bottom: none; padding-bottom: 0;}
-            div.project h3, div.project .title-description {line-height: 1em;}
+            div.project h3, div.project .description {line-height: 1em;}
             div.project img {max-height: none; }
             div.info {border-bottom: 1px dotted #adadad; padding-bottom: 20px; }
             ul#menu {margin: 0 0 25px; overflow: hidden;}
             ul#menu li {float: left; border-right: 1px solid #adadad; padding-right: 8px; margin-right: 8px; }
             ul#menu li:last-child {border-right: none; padding-right: 5px; }
-            div.project div.description {width: auto; margin-top: 2px;}
-
         }
          
         /* Landscape phones and down */
@@ -73,8 +71,7 @@
             ul#menu {text-align: center;}
             ul#menu a {font-size: 12px;}
             div.project h2 {font-size: 14px;}
-            div.project .title-description {font-size: 14px; margin-left: 3px; padding-left: 5px;}
-            div.project div.description {font-size: 12px;}
+            div.project .description {font-size: 14px; margin-left: 3px; padding-left: 5px;}
 
         }
         
@@ -86,14 +83,13 @@
         <h1>Soo Oh</h1>
 
         <div class="row-fluid hidden-phone">
-            <div class="info">I joined the data team at the Chronicle of Higher Education in April 2014. These are some projects I've worked on in the past.</div>
+            <div class="info">I joined the data team at the Chronicle of Higher Education in April 2014. These are some projects I've worked on.</div>
         </div>
         
         <div class="row-fluid">
             <div id="sidebar" class="span2">
                 <div class="row-fluid">
                     <ul id="menu" class="nav">
-                        <!-- <li class="resume"><a href="resume.html">Resume</a></li> -->
                         <li><a href="mailto:soo.oh5[at]gmail.com">Email</a></li>
                         <li><a href="http://twitter.com/soooh">Twitter</a></li>
                         <li><a href="http://linkedin.com/in/soooh">LinkedIn</a></li>
@@ -105,54 +101,63 @@
             <div class="span10">
 
                 <div class="row-fluid visible-phone">
-                    <div class="info">I joined the data team at the Chronicle of Higher Education in April 2014. These are some projects I've worked on in the past.</div>
+                    <div class="info">I joined the data team at the Chronicle of Higher Education in April 2014. These are some projects I've worked on.</div>
                 </div>
 
 
-                <h2>Los Angeles Times</h2>
+                <!-- screenshots in 1200 x 828 -->
+
+                <div class="organization">
+
+                    <h2>The Chronicle</h2>
+
+                    <div class="row-fluid">
+                        <div class="project">
+                            <a href="http://chronicle.com/article/The-Courting-of-Marvin-Clark/146517/">
+                                <h3>Courting <span class="description">Feature presentation</span></h3>
+                                <img src="img/portfolio/courting.jpg" alt="Screenshot of Courting on desktop view" />
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
 
 
-                <div class="project row-fluid">
-                    <h3>Westmont</h3> <span class="title-description">Feature presentation</span>
-                    <div class="description"><span class="dev-label">Frontend:</span> Bootstrap, HTML, CSS. Development of base styles for future Homicide Report storytelling.</div>
-                    <a href="http://homicide.latimes.com/post/westmont-homicides/">
-                        <img class="phone visible-desktop" src="img/portfolio/westmont_1.jpg" alt="Screenshot of Westmont homicides on mobile view" />
-                        <img class="tablet visible-desktop" src="img/portfolio/westmont_2.jpg" alt="Screenshot of Westmont homicides on tablet portrait view" />
-                        <img class="netbook visible-desktop" src="img/portfolio/westmont_3.jpg" alt="Screenshot of Westmont homicides on tablet landscape view" />
-                        <img class="desktop" src="img/portfolio/westmont_4.jpg" alt="Screenshot of Westmont homicides on desktop view" />
-                    </a>
-                </div>
-                <div class="project row-fluid">
-                    <h3>Buzzmeter</h3> <span class="title-description">Entertainment news app</span>
-                    <div class="description"><span class="dev-label">Frontend:</span> HTML, CSS, JavaScript, jQuery, Bootstrap | <span class="dev-label">Backend:</span> deep dive into custom Django admin (models, admin, widgets, forms) </div>
-                    <a href="http://www.latimes.com/buzzmeter">
-                        <img class="phone visible-desktop" src="img/portfolio/buzzmeter_1.jpg" alt="Screenshot of Buzzmeter on mobile view" />
-                        <img class="tablet visible-desktop" src="img/portfolio/buzzmeter_2.jpg" alt="Screenshot of Buzzmeter on tablet portrait view" />
-                        <img class="netbook visible-desktop" src="img/portfolio/buzzmeter_3.jpg" alt="Screenshot of Buzzmeter on tablet landscape view" />
-                        <img class="desktop" src="img/portfolio/buzzmeter_4.jpg"  alt="Screenshot of Buzzmeter on desktop view" />
-                    </a>
-                </div>
-                <div class="project row-fluid">
-                    <h3>Manhunt</h3> <span class="title-description">Feature presentation</span>
-                    <div class="description"><span class="dev-label">Frontend:</span> Brightcove Video API, Bootstrap, HTML, CSS, JavaScript, jQuery</div>
-                    <a href="http://www.latimes.com/dorner">
-                        <img class="phone visible-desktop" src="img/portfolio/dorner_1.jpg" alt="Screenshot of Manhunt longread on mobile view" />
-                        <img class="tablet visible-desktop" src="img/portfolio/dorner_2.jpg" alt="Screenshot of Manhunt longread on tablet portrait view" />
-                        <img class="netbook visible-desktop" src="img/portfolio/dorner_3.jpg" alt="Screenshot of Manhunt longread on tablet landscape view" />
-                        <img class="desktop" src="img/portfolio/dorner_4.jpg" alt="Screenshot of Manhunt longread on desktop view" />
-                    </a>
-                </div>
-                <div class="project row-fluid">
-                    <h3>Guides</h3> <span class="title-description">City and travel maps app</span>
-                    <div class="description"><span class="dev-label">Frontend:</span> Leaflet, Bootstrap, Underscore.js, HTML, CSS, JavaScript, jQuery | <span class="dev-label">Backend:</span> introduction to Django models</div>
-                    <a href="http://guides.latimes.com/">
-                        <img class="phone visible-desktop" src="img/portfolio/guides_1.jpg" alt="Screenshot of Guides on mobile view" />
-                        <img class="tablet visible-desktop" src="img/portfolio/guides_2.jpg" alt="Screenshot of Guides on tablet portrait view" />
-                        <img class="netbook visible-desktop" src="img/portfolio/guides_3.jpg" alt="Screenshot of Guides on tablet landscape view" />
-                        <img class="desktop" src="img/portfolio/guides_4.jpg" alt="Screenshot of Guides on desktop view" />
-                    </a>
-                </div>
+                <div class="organization">
 
+
+                    <h2>Los Angeles Times</h2>
+
+                    <div class="row-fluid">
+                        <div class="project">
+                            <a href="http://guides.latimes.com/">
+                                <h3>Guides <span class="description">City and travel maps app</span></h3>
+                                <img src="img/portfolio/guides2_4.jpg" alt="Screenshot of Guides on desktop view" />
+                            </a>
+                        </div>
+
+                        <div class="project">
+                            <a href="http://homicide.latimes.com/post/westmont-homicides/">
+                                <h3>Westmont <span class="description">Feature presentation</span></h3> 
+                                <img src="img/portfolio/westmont_4.jpg" alt="Screenshot of Westmont homicides on desktop view" />
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="http://www.latimes.com/buzzmeter">
+                                <h3>Buzzmeter  <span class="description">Entertainment news app</span></h3>
+                                <img class="desktop" src="img/portfolio/buzzmeter_4.jpg"  alt="Screenshot of Buzzmeter on desktop view" />
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="http://www.latimes.com/dorner">
+                                <h3>Manhunt <span class="description">Feature presentation</span></h3> 
+                                <img class="desktop" src="img/portfolio/dorner_4.jpg" alt="Screenshot of Manhunt longread on desktop view" />
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+                
 
             </div>
 
