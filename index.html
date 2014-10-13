@@ -1,192 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Soo Oh</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Soo Oh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<script type="text/javascript" src="//code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
-	<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/jpg" href="favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/jpg" href="favicon.ico">
 
 </head>
 <body>
 
-	<style type="text/css">
-		a {color: #494546; }
-		a:hover {opacity: 0.6;color: #494546;}
+    <style type="text/css">
+        a {color: #494546; }
+        a:hover {opacity: 0.6; color: #494546;}
 
-		body {overflow-x: hidden; font-family: "Roboto", Arial, sans-serif;}
-		
-		h1 {font: 100 50px "Roboto", Arial, sans-serif; text-align: center;}
-		div.info {display: none;}
+        body {overflow-x: hidden; font-family: "Roboto", Arial, sans-serif;}
+        
+        h1 {font: 100 50px "Roboto", Arial, sans-serif; text-align: center;}
+        div.info {display: none;}
+        div.info a {color: #494546; text-decoration: none; border-bottom: 1px dotted #494546;}
+        div.info a:hover {color: #494546;}
 
-		div.organization {margin-bottom: 1.75em;}
-		div.organization h2 {font: 300 20px "Roboto", Arial, sans-serif; margin: 0 0 .5em; }
+        div.organization {margin-bottom: 1.75em;}
+        div.organization h2 {font: 300 20px "Roboto", Arial, sans-serif; margin: 0 0 .5em; }
 
-		div.project {margin-bottom: 2em;}		
-		div.project a {overflow: hidden; }
-		div.project a:hover {text-decoration: none;}
-		div.project h3 {display: block; margin: 0; font: 700 14px "Roboto", Arial, sans-serif; text-transform: uppercase; line-height: 1.5em; }
-		div.project .description {display: none;}
-		div.project img {width: 100%; border: 1px solid #7A7A7A; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+        div.project {margin-bottom: 2em;}       
+        div.project a {overflow: hidden; }
+        div.project a:hover {text-decoration: none;}
+        div.project h3 {display: block; margin: 0; font: 700 14px "Roboto", Arial, sans-serif; text-transform: uppercase; line-height: 1.5em; }
+        div.project .description {display: none;}
+        div.project img {width: 100%; border: 1px solid #7A7A7A; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
-		ul#menu {margin-bottom: 2em; text-align: center;}
-		ul#menu li {display: inline-block; margin-right: .5em; padding-right: .5em; border-right: 1px solid #ccc;}
-		ul#menu li:last-child {border-right: none;}
-		ul#menu li a {padding: 0;}
+        ul#menu {margin-bottom: 2em; text-align: center;}
+        ul#menu li {display: inline-block; margin-right: .5em; padding-right: .5em; border-right: 1px solid #ccc;}
+        ul#menu li:last-child {border-right: none;}
+        ul#menu li a {padding: 0;}
 
-		/* Small devices (tablets, 768px and up) */
-		@media (min-width: 768px) { 
-			h1 {font-size: 60px; text-align: left;}
-			div.info {display: block; margin-bottom: 2em; color: #000; font: 300 16px "Roboto", Arial, sans-serif; }
-			
-			div.organization {margin-bottom: 4em;}
-			div.organization h2 {font-size: 24px; }
-			
-			div.project h3 {margin: 0 0 .5em; line-height: 1em;}
-			div.project .description {display: inline-block; margin-left: 4px; padding-left: 7px; color: #949494; font-weight: 500; text-transform: none; border-left: 1px solid #adadad; }
-			
-			ul#menu {text-align: left;}
-			ul#menu li {display: block; border-right: none;}
-			ul#menu li a {padding: 0; font-family: "Roboto", Arial, sans-serif; text-transform: uppercase;}
-			ul#menu li a:hover {color: #000; background-color: transparent; text-decoration: none;}
-		}
+        @media (min-width: 768px) { 
+            h1 {font-size: 60px; text-align: left;}
+            div.info {display: block; margin-bottom: 2em; color: #000; font: 300 16px "Roboto", Arial, sans-serif; }
+            
+            div.organization {margin-bottom: 4em;}
+            div.organization h2 {font-size: 24px; }
+            
+            div.project h3 {margin: 0 0 .5em; line-height: 1em;}
+            div.project .description {display: inline-block; margin-left: 4px; padding-left: 7px; color: #949494; font-weight: 500; text-transform: none; border-left: 1px solid #adadad; }
+            
+            ul#menu {text-align: left;}
+            ul#menu li {display: block; border-right: none;}
+            ul#menu li a {padding: 0; font-family: "Roboto", Arial, sans-serif; text-transform: uppercase;}
+            ul#menu li a:hover {color: #000; background-color: transparent; text-decoration: none;}
+        }
 
-		/* Medium devices (desktops, 992px and up) */
-		@media (min-width: 992px) {
-			h1 {font-size: 80px;}
-			div.organization h2 {font-size: 32px; font-weight: 400;}
-			div.project h3 {font-size: 16px; font-weight: 400;}
-			div.project .description {margin-left: 9px; padding-left: 14px; font-weight: 300; color: #4D4D4D; }
-			ul#menu li {line-height: 2em;}
-			ul#menu li a {font-size: 16px; font-weight: 300; }
-		}
+        @media (min-width: 992px) {
+            h1 {font-size: 80px;}
+            div.organization h2 {font-size: 32px; font-weight: 400;}
+            div.project h3 {font-size: 16px; font-weight: 400;}
+            div.project .description {margin-left: 9px; padding-left: 14px; font-weight: 300; color: #4D4D4D; }
+            ul#menu li {line-height: 2em;}
+            ul#menu li a {font-size: 16px; font-weight: 300; }
+        }
 
-		/* Large devices (large desktops, 1200px and up) */
-		@media (min-width: 1200px) {
-			h1 {font-size: 90px;}
-			div.project h3 {font-size: 18px;}
-			div.project .description {margin-left: 9px; padding-left: 14px; }
-		}
+        @media (min-width: 1200px) {
+            h1 {font-size: 90px;}
+            div.project h3 {font-size: 18px;}
+            div.project .description {margin-left: 9px; padding-left: 14px; }
+        }
 
-		
-	</style>
+        
+    </style>
 
-	<div class="container">
+    <div class="container">
 
-		<h1>Soo Oh</h1>
+        <h1>Soo Oh</h1>
 
-		<div class="row">
-			<div class="info col-sm-12">
-				<p>I joined the data team at the Chronicle of Higher Education in April 2014. </p>
-				<p>These are some projects I've worked on.</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-sm-2">
-			
-				<ul id="menu" class="nav nav-stacked">
-					<li><a href="mailto:soo.oh5[at]gmail.com">Email</a></li>
-					<li><a href="http://twitter.com/soooh">Twitter</a></li>
-					<li><a href="http://linkedin.com/in/soooh">LinkedIn</a></li>
-					<li><a href="http://github.com/soooh">Github</a></li>
-				</ul>
+        <div class="row">
+            <div class="info col-sm-12">
+                <p>I joined the data team at <a href="http://chronicle.com/">The Chronicle of Higher Education</a> and <a href="http://philanthropy.com">Philanthropy</a> in April 2014. </p>
+                <p>These are some projects I've worked on.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-2">
+            
+                <ul id="menu" class="nav nav-stacked">
+                    <li><a href="mailto:soo.oh5[at]gmail.com">Email</a></li>
+                    <li><a href="http://twitter.com/soooh">Twitter</a></li>
+                    <li><a href="http://linkedin.com/in/soooh">LinkedIn</a></li>
+                    <li><a href="http://github.com/soooh">Github</a></li>
+                </ul>
 
-		
-			</div>
-			<div class="col-sm-10">
+        
+            </div>
+            <div class="col-sm-10">
 
-				<!-- screenshots in 1200 (+15 for scroll bar) x 828 -->
+                <!-- screenshots in 1200 (+15 for scroll bar) x 828 -->
 
-				<div class="organization row">
+                <div class="organization row">
 
-					<h2 class="col-xs-12">The Chronicle</h2>
+                    <h2 class="col-xs-12">The Chronicle</h2>
 
-					<div class="project col-xs-6">
-						<a href="http://chronicle.com/article/Adjunct-explainer/148489/">
-							<h3>Adjuncts <span class="description">Video explainer</span></h3>
-							<img src="img/portfolio/adjuncts.png" alt="Screenshot of Adjuncts video explainer" />
-						</a>
-					</div>
-					<div class="project col-xs-6">
-						<a href="http://chronicle.com/article/Are-Poor-Families-Really/148001/">
-							<h3>College prices <span class="description">Visual explainer</span></h3>
-							<img src="img/portfolio/college_affordability.png" alt="Screenshot of College visual explainer" />
-						</a>
-					</div>
-					<div class="project col-xs-6">
-						<a href="http://chronicle.com/article/The-Courting-of-Marvin-Clark/146517/">
-							<h3>Courting <span class="description">Feature presentation</span></h3>
-							<img src="img/portfolio/courting.jpg" alt="Screenshot of Courting longread" />
-						</a>
-					</div>
-					<div class="project col-xs-6">
-						<a href="http://chronicle.com/article/8-Things-You-Should-Know-About/146901/">
-							<h3>MOOCs <span class="description">Interactive graphic</span></h3>
-							<img src="img/portfolio/moocs.png" alt="Screenshot of MOOCs interactive" />
-						</a>
-					</div>
-	
+                    <div class="project col-xs-6">
+                        <a href="http://philanthropy.com/article/How-America-Gives/149107/">
+                            <h3>How America Gives <span class="description">Interactive</span></h3>
+                            <img src="img/portfolio/how-america-gives.png" alt="Screenshot of How America Gives interactive" />
+                        </a>
+                    </div>
+                    <div class="project col-xs-6">
+                        <a href="http://chronicle.com/article/Adjunct-explainer/148489/">
+                            <h3>Adjuncts <span class="description">Video explainer</span></h3>
+                            <img src="img/portfolio/adjuncts.png" alt="Screenshot of Adjuncts video explainer" />
+                        </a>
+                    </div>
+                    <div class="project col-xs-6">
+                        <a href="http://chronicle.com/article/Are-Poor-Families-Really/148001/">
+                            <h3>College prices <span class="description">Visual explainer</span></h3>
+                            <img src="img/portfolio/college_affordability.png" alt="Screenshot of College visual explainer" />
+                        </a>
+                    </div>
+                    <div class="project col-xs-6">
+                        <a href="http://chronicle.com/article/The-Courting-of-Marvin-Clark/146517/">
+                            <h3>Courting <span class="description">Feature presentation</span></h3>
+                            <img src="img/portfolio/courting.jpg" alt="Screenshot of Courting longread" />
+                        </a>
+                    </div>
+                    <div class="project col-xs-6">
+                        <a href="http://chronicle.com/article/8-Things-You-Should-Know-About/146901/">
+                            <h3>MOOCs <span class="description">Interactive graphic</span></h3>
+                            <img src="img/portfolio/moocs.png" alt="Screenshot of MOOCs interactive" />
+                        </a>
+                    </div>
+    
 
-				</div>
-
-
-				<div class="organization row">
-					<h2 class="col-xs-12">Los Angeles Times</h2>
-
-					<div class="project col-xs-6">
-						<a href="http://guides.latimes.com/">
-							<h3>Guides <span class="description">City and travel maps app</span></h3>
-							<img src="img/portfolio/guides2_4.jpg" alt="Screenshot of Guides app" />
-						</a>
-					</div>
-					<div class="project col-xs-6">
-						<a href="http://homicide.latimes.com/post/westmont-homicides/">
-							<h3>Westmont <span class="description">Feature presentation</span></h3> 
-							<img src="img/portfolio/westmont_4.jpg" alt="Screenshot of Westmont homicides story" />
-						</a>
-					</div>
-					<div class="project col-xs-6">
-						<a href="http://graphics.latimes.com/buzzmeter-oscars-2014/">
-							<h3>Buzzmeter  <span class="description">Entertainment news app</span></h3>
-							<img class="desktop" src="img/portfolio/buzzmeter_4.jpg"  alt="Screenshot of Buzzmeter app" />
-						</a>
-					</div>
-					<div class="project col-xs-6">
-						<a href="http://www.latimes.com/dorner">
-							<h3>Manhunt <span class="description">Feature presentation</span></h3> 
-							<img class="desktop" src="img/portfolio/dorner_4.jpg" alt="Screenshot of Manhunt longread" />
-						</a>
-					</div>
-				</div>
+                </div>
 
 
-				<div class="organization row">
-					<h2 id="talks" class="col-xs-12">Talks</h2>
-					<div class="project col-xs-6">
-						<a href="pdf/american-university-2014-08-13.pdf">
-							<h3>August 13, 2014 <span class="description">American University</span></h3>
-							<img src="img/talks/au.png" alt="Screenshot of Guides app" />
-						</a>
-					</div>
-				</div>
-					
-			</div>
-	  </div>
-	</div>
+                <div class="organization row">
+                    <h2 class="col-xs-12">Los Angeles Times</h2>
+
+                    <div class="project col-xs-6">
+                        <a href="http://guides.latimes.com/">
+                            <h3>Guides <span class="description">City and travel maps app</span></h3>
+                            <img src="img/portfolio/guides2_4.jpg" alt="Screenshot of Guides app" />
+                        </a>
+                    </div>
+                    <div class="project col-xs-6">
+                        <a href="http://homicide.latimes.com/post/westmont-homicides/">
+                            <h3>Westmont <span class="description">Feature presentation</span></h3> 
+                            <img src="img/portfolio/westmont_4.jpg" alt="Screenshot of Westmont homicides story" />
+                        </a>
+                    </div>
+                    <div class="project col-xs-6">
+                        <a href="http://graphics.latimes.com/buzzmeter-oscars-2014/">
+                            <h3>Buzzmeter  <span class="description">Entertainment news app</span></h3>
+                            <img class="desktop" src="img/portfolio/buzzmeter_4.jpg"  alt="Screenshot of Buzzmeter app" />
+                        </a>
+                    </div>
+                    <div class="project col-xs-6">
+                        <a href="http://www.latimes.com/dorner">
+                            <h3>Manhunt <span class="description">Feature presentation</span></h3> 
+                            <img class="desktop" src="img/portfolio/dorner_4.jpg" alt="Screenshot of Manhunt longread" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 
+                <div class="organization row">
+                    <h2 id="talks" class="col-xs-12">Talks</h2>
+                    <div class="project col-xs-6">
+                        <a href="pdf/american-university-2014-08-13.pdf">
+                            <h3>August 13, 2014 <span class="description">American University</span></h3>
+                            <img src="img/talks/au.png" alt="Screenshot of Guides app" />
+                        </a>
+                    </div>
+                </div> -->
+                    
+            </div>
+      </div>
+    </div>
 
 </body>
 </html>
