@@ -21,20 +21,12 @@ h1 {
     border-bottom: 1px dotted #494546;
     text-decoration: none; 
     white-space: nowrap;
-    -webkit-transition: all .2s; 
-       -moz-transition: all .2s; 
-         -o-transition: all .2s; 
-            transition: all .2s;
 }
 .info a:hover,
 .info a:focus,
 .info a:active {
     color: #494546;
     opacity: 0.6;
-    -webkit-transition: all .2s; 
-       -moz-transition: all .2s; 
-         -o-transition: all .2s; 
-            transition: all .2s;
 }
 
 #menu {
@@ -58,20 +50,12 @@ h1 {
     text-transform: uppercase;
     text-decoration: none; 
     opacity: 1.0;
-    -webkit-transition: all .1s; 
-       -moz-transition: all .1s; 
-         -o-transition: all .1s; 
-            transition: all .1s;
 }
 #menu li a:hover,
 #menu li a:focus,
 #menu li a:active {
     background-color: transparent;
     opacity: 0.6;
-    -webkit-transition: all .1s; 
-       -moz-transition: all .1s; 
-         -o-transition: all .1s; 
-            transition: all .1s;
 }
 
 .organization {
