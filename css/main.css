@@ -1,0 +1,207 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    overflow-x: hidden; 
+}
+a {
+    color: #494546;
+}
+
+h1 {
+    font: 100 50px "Roboto", Arial, sans-serif; 
+    text-align: center;
+}
+.info {
+    margin: 0 auto 1.25em;
+    color: #000; 
+    font: 300 14px "Roboto", Arial, sans-serif; 
+    text-align: center;
+}
+.info a {
+    color: #494546; 
+    border-bottom: 1px dotted #494546;
+    text-decoration: none; 
+    -webkit-transition: all .2s; 
+       -moz-transition: all .2s; 
+         -o-transition: all .2s; 
+            transition: all .2s;
+}
+.info a:hover,
+.info a:focus,
+.info a:active {
+    color: #494546;
+    opacity: 0.6;
+    -webkit-transition: all .2s; 
+       -moz-transition: all .2s; 
+         -o-transition: all .2s; 
+            transition: all .2s;
+}
+
+#menu {
+    margin-bottom: 2em; 
+    text-align: center;
+}
+#menu li {
+    display: inline-block; 
+    margin-right: .5em; 
+    padding-right: .5em; 
+    border-right: 1px solid #ccc;
+}
+#menu li:last-child {
+    border-right: none;
+}
+#menu li a {
+    padding: 0;
+    color: #494546; 
+    background-color: transparent;
+    font-family: "Roboto", Arial, sans-serif; 
+    text-transform: uppercase;
+    text-decoration: none; 
+    opacity: 1.0;
+    -webkit-transition: all .1s; 
+       -moz-transition: all .1s; 
+         -o-transition: all .1s; 
+            transition: all .1s;
+}
+#menu li a:hover,
+#menu li a:focus,
+#menu li a:active {
+    background-color: transparent;
+    opacity: 0.6;
+    -webkit-transition: all .1s; 
+       -moz-transition: all .1s; 
+         -o-transition: all .1s; 
+            transition: all .1s;
+}
+
+.organization {
+    margin-bottom: 1.75em;
+}
+h2.organization-name {
+    margin: 0 0 .5em; 
+    font: 300 20px "Roboto", Arial, sans-serif; 
+}
+
+.project {
+    margin-bottom: 2em;
+}       
+.project h3 {
+    display: block; 
+    margin: 0; 
+    font: 700 12px/1.5em "Roboto", Arial, sans-serif; 
+    text-transform: uppercase; 
+}
+.description {
+    display: none;
+}
+.project a img {
+    width: 100%;
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5); 
+       -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5); 
+            box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    -webkit-transition: all .2s; 
+       -moz-transition: all .2s; 
+         -o-transition: all .2s; 
+            transition: all .2s;
+}
+a.project-link:hover img,
+a.project-link:focus img,
+a.project-link:active img {
+    opacity: 1.0;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 1.0); 
+       -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 1.0); 
+            box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 1.0);
+    -webkit-transition: all .2s; 
+       -moz-transition: all .2s; 
+         -o-transition: all .2s; 
+            transition: all .2s;
+}
+
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 60px; 
+        text-align: left;
+    }
+    .info { 
+        margin: 0 auto 2em;
+        font-size: 16px; 
+        text-align: left;
+    }
+    .organization {
+        margin-bottom: 4em;
+    }
+    h2.organization-name {
+        font-size: 24px; 
+    }
+    h3.project-name {
+        margin: 0 0 .5em; 
+        line-height: 1em;
+    }
+    .description {
+        display: inline-block; 
+        margin-left: 4px; 
+        padding-left: 7px; 
+        color: #949494; 
+        font-weight: 500; 
+        text-transform: none; 
+        border-left: 1px solid #adadad; 
+    }
+    
+    #menu {
+        text-align: left;
+    }
+    #menu li {
+        display: block; 
+        border-right: none;
+    }
+    #menu li a {
+        padding: 0;
+    }
+    #menu li a:hover,
+    #menu li a:focus,
+    #menu li a:active {
+        color: #000; 
+        background-color: transparent; 
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2.organization-name {
+        font-weight: 400;
+        font-size: 32px; 
+    }
+    h3.project-name {
+        font-weight: 400;
+        font-size: 16px; 
+    }
+    .description {
+        margin-left: 9px; 
+        padding-left: 14px; 
+        font-weight: 300; 
+        color: #4D4D4D; 
+    }
+    #menu li {
+        line-height: 2em;
+    }
+    #menu li a {
+        font-weight: 300; 
+        font-size: 16px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 90px;
+    }
+    h3.project-name {
+        font-size: 18px;
+    }
+    .description {
+        margin-left: 9px; 
+        padding-left: 14px; 
+    }
+}

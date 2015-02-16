@@ -17,129 +17,12 @@
     <![endif]-->
 
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/jpg" href="favicon.ico">
 
 </head>
 <body>
 
-    <style type="text/css">
-
-        a {color: #494546;}
-
-        body {overflow-x: hidden; font-family: "Roboto", Arial, sans-serif;}
-        
-        h1 {font: 100 50px "Roboto", Arial, sans-serif; text-align: center;}
-        div.info {display: none;}
-        div.info a {
-            color: #494546; 
-            text-decoration: none; 
-            border-bottom: 1px dotted #494546;
-            -webkit-transition: all .2s; 
-               -moz-transition: all .2s; 
-                 -o-transition: all .2s; 
-                    transition: all .2s;
-        }
-        div.info a:hover,
-        div.info a:focus,
-        div.info a:active {
-            color: #494546;
-            opacity: 0.6;
-            -webkit-transition: all .2s; 
-               -moz-transition: all .2s; 
-                 -o-transition: all .2s; 
-                    transition: all .2s;
-        }
-
-        ul#menu {margin-bottom: 2em; text-align: center;}
-        ul#menu li {display: inline-block; margin-right: .5em; padding-right: .5em; border-right: 1px solid #ccc;}
-        ul#menu li:last-child {border-right: none;}
-        ul#menu li a {
-            padding: 0;
-            opacity: 1.0;
-            color: #494546; 
-            background-color: transparent;
-            text-decoration: none; 
-            -webkit-transition: all .1s; 
-               -moz-transition: all .1s; 
-                 -o-transition: all .1s; 
-                    transition: all .1s;
-        }
-        ul#menu li a:hover,
-        ul#menu li a:focus,
-        ul#menu li a:active {
-            opacity: 0.6;
-            background-color: transparent;
-            -webkit-transition: all .1s; 
-               -moz-transition: all .1s; 
-                 -o-transition: all .1s; 
-                    transition: all .1s;
-        }
-
-        div.organization {margin-bottom: 1.75em;}
-        div.organization h2 {font: 300 20px "Roboto", Arial, sans-serif; margin: 0 0 .5em; }
-
-        div.project {margin-bottom: 2em;}       
-        div.project h3 {display: block; margin: 0; font: 700 12px "Roboto", Arial, sans-serif; text-transform: uppercase; line-height: 1.5em; }
-        div.project .description {display: none;}
-        div.project a img {
-            width: 100%;
-            opacity: 0.9;
-            -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5); 
-               -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5); 
-                    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
-            -webkit-transition: all .2s; 
-               -moz-transition: all .2s; 
-                 -o-transition: all .2s; 
-                    transition: all .2s;
-        }
-        div.project a:hover img,
-        div.project a:focus img,
-        div.project a:active img {
-            opacity: 1.0;
-            -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 1.0); 
-               -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 1.0); 
-                    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 1.0);
-            -webkit-transition: all .2s; 
-               -moz-transition: all .2s; 
-                 -o-transition: all .2s; 
-                    transition: all .2s;
-        }
-
-        @media (min-width: 768px) { 
-            h1 {font-size: 60px; text-align: left;}
-            div.info {display: block; margin-bottom: 2em; color: #000; font: 300 16px "Roboto", Arial, sans-serif; }
-            
-            div.organization {margin-bottom: 4em;}
-            div.organization h2 {font-size: 24px; }
-            
-            div.project h3 {margin: 0 0 .5em; line-height: 1em;}
-            div.project .description {display: inline-block; margin-left: 4px; padding-left: 7px; color: #949494; font-weight: 500; text-transform: none; border-left: 1px solid #adadad; }
-            
-            ul#menu {text-align: left;}
-            ul#menu li {display: block; border-right: none;}
-            ul#menu li a {padding: 0; font-family: "Roboto", Arial, sans-serif; text-transform: uppercase;}
-            ul#menu li a:hover,
-            ul#menu li a:focus,
-            ul#menu li a:active {color: #000; background-color: transparent; text-decoration: none;}
-        }
-
-        @media (min-width: 992px) {
-            h1 {font-size: 80px;}
-            div.organization h2 {font-size: 32px; font-weight: 400;}
-            div.project h3 {font-size: 16px; font-weight: 400;}
-            div.project .description {margin-left: 9px; padding-left: 14px; font-weight: 300; color: #4D4D4D; }
-            ul#menu li {line-height: 2em;}
-            ul#menu li a {font-size: 16px; font-weight: 300; }
-        }
-
-        @media (min-width: 1200px) {
-            h1 {font-size: 90px;}
-            div.project h3 {font-size: 18px;}
-            div.project .description {margin-left: 9px; padding-left: 14px; }
-        }
-
-        
-    </style>
 
     <div class="container">
 
@@ -147,82 +30,75 @@
 
         <div class="row">
             <div class="info col-sm-12">
-                <p>I joined the data team at <a href="//chronicle.com/">The Chronicle of Higher Education</a> and <a href="//philanthropy.com">Philanthropy</a> in April 2014. </p>
+                <p>I build interactive features and apps at <a href="//chronicle.com/">The Chronicle of Higher Education</a> and <a href="//philanthropy.com">Philanthropy</a>. </p>
                 <p>These are some projects I've worked on.</p>
             </div>
         </div>
         
         <div class="row">
             <div class="col-sm-2">
-            
                 <ul id="menu" class="nav nav-stacked">
                     <li><a href="mailto:soo.oh5[at]gmail.com">Email</a></li>
                     <li><a href="//twitter.com/soooh">Twitter</a></li>
                     <li><a href="//linkedin.com/in/soooh">LinkedIn</a></li>
-                    <li><a href="//github.com/soooh">Github</a></li>
+                    <li><a href="//github.com/soooh">GitHub</a></li>
                 </ul>
-
-        
             </div>
             <div class="col-sm-10">
 
                 <!-- screenshots in 1200 (+15 for scroll bar) x 828 -->
 
                 <div class="organization row">
-
-                    <h2 class="col-xs-12">The Chronicle</h2>
-
+                    <h2 class="organization-name col-xs-12">The Chronicle</h2>
 
                     <div class="project col-xs-6">
-                        <h3>Philanthropy 50 <span class="description">Interactive</span></h3>
-                        <a href="//philanthropy.com/factfile/phil-50">
+                        <h3 class="project-name">Philanthropy 50 <span class="description">Interactive</span></h3>
+                        <a class="project-link" href="//philanthropy.com/factfile/phil-50">
                             <img src="img/portfolio/phil50_458.png" alt="Screenshot of Philanthropy 50 feature presentation" />
                         </a>
                     </div>
 
-
                     <div class="project col-xs-6">
-                        <h3>Fixer <span class="description">Feature presentation</span></h3>
-                        <a href="//chronicle.com/article/Confessions-of-a-Fixer/150891/">
+                        <h3 class="project-name">Fixer <span class="description">Feature presentation</span></h3>
+                        <a class="project-link" href="//chronicle.com/article/Confessions-of-a-Fixer/150891/">
                             <img src="img/portfolio/fixer_458.png" alt="Screenshot of Fixer feature presentation" />
                         </a>
                     </div>
 
-
                     <div class="project col-xs-6">
-                        <h3>Alcohol <span class="description">Special report</span></h3>
-                        <a href="//chronicle.com/article/A-River-of-Booze/150221/">
+                        <h3 class="project-name">Alcohol <span class="description">Special report</span></h3>
+                        <a class="project-link" href="//chronicle.com/article/A-River-of-Booze/150221/">
                             <img src="img/portfolio/alcohol_458.png" alt="Screenshot of multiday package on Alcohol's Hold on Campus" />
                         </a>
                     </div>
 
                     <div class="project col-xs-6">
-                        <h3>How America Gives <span class="description">Interactive</span></h3>
-                        <a href="//philanthropy.com/article/How-America-Gives/149107/">
+                        <h3 class="project-name">How America Gives <span class="description">Interactive</span></h3>
+                        <a class="project-link" href="//philanthropy.com/article/How-America-Gives/149107/">
                             <img src="img/portfolio/how_america_gives_458.png" alt="Screenshot of How America Gives interactive" />
                         </a>
                     </div>
                     <div class="project col-xs-6">
-                        <h3>Adjuncts <span class="description">Video explainer</span></h3>
-                        <a href="//chronicle.com/article/Adjunct-explainer/148489/">
+                        <h3 class="project-name">Adjuncts <span class="description">Video explainer</span></h3>
+                        <a class="project-link" href="//chronicle.com/article/Adjunct-explainer/148489/">
                             <img src="img/portfolio/adjuncts_458.png" alt="Screenshot of Adjuncts video explainer" />
                         </a>
                     </div>
                     <div class="project col-xs-6">
-                        <h3>College prices <span class="description">Visual explainer</span></h3>
-                        <a href="//chronicle.com/article/Are-Poor-Families-Really/148001/">
+                        <h3 class="project-name">College prices <span class="description">Visual explainer</span></h3>
+                        <a class="project-link" href="//chronicle.com/article/Are-Poor-Families-Really/148001/">
                             <img src="img/portfolio/college_affordability_458.png" alt="Screenshot of College visual explainer" />
                         </a>
                     </div>
                     <div class="project col-xs-6">
-                        <h3>Courting <span class="description">Feature presentation</span></h3>
-                        <a href="//chronicle.com/article/The-Courting-of-Marvin-Clark/146517/">
+                        <h3 class="project-name">Courting <span class="description">Feature presentation</span></h3>
+                        <a class="project-link" href="//chronicle.com/article/The-Courting-of-Marvin-Clark/146517/">
                             <img src="img/portfolio/courting_458.png" alt="Screenshot of Courting longread" />
                         </a>
                     </div>
                     <div class="project col-xs-6">
-                        <h3>MOOCs <span class="description">Interactive graphic</span></h3>
-                        <a href="//chronicle.com/article/8-Things-You-Should-Know-About/146901/">
+                        <h3 class="project-name">MOOCs <span class="description">Interactive graphic</span></h3>
+                        <a class="project-link" href="//chronicle.com/article/8-Things-You-Should-Know-About/146901/">
                             <img src="img/portfolio/moocs_458.png" alt="Screenshot of MOOCs interactive" />
                         </a>
                     </div>
@@ -232,29 +108,29 @@
 
 
                 <div class="organization row">
-                    <h2 class="col-xs-12">Los Angeles Times</h2>
+                    <h2 class="organization-name col-xs-12">Los Angeles Times</h2>
 
                     <div class="project col-xs-6">
-                        <h3>Guides <span class="description">City and travel maps app</span></h3>
-                        <a href="//guides.latimes.com/">
+                        <h3 class="project-name">Guides <span class="description">City and travel maps app</span></h3>
+                        <a class="project-link" href="//guides.latimes.com/">
                             <img src="img/portfolio/guides_458.png" alt="Screenshot of Guides app" />
                         </a>
                     </div>
                     <div class="project col-xs-6">
-                        <h3>Westmont <span class="description">Feature presentation</span></h3> 
-                        <a href="//homicide.latimes.com/post/westmont-homicides/">
+                        <h3 class="project-name">Westmont <span class="description">Feature presentation</span></h3> 
+                        <a class="project-link" href="//homicide.latimes.com/post/westmont-homicides/">
                             <img src="img/portfolio/westmont_458.png" alt="Screenshot of Westmont homicides story" />
                         </a>
                     </div>
                     <div class="project col-xs-6">
-                        <h3>Buzzmeter  <span class="description">Entertainment news app</span></h3>
-                        <a href="//www.latimes.com/buzzmeter">
+                        <h3 class="project-name">Buzzmeter  <span class="description">Entertainment news app</span></h3>
+                        <a class="project-link" href="//www.latimes.com/buzzmeter">
                             <img class="desktop" src="img/portfolio/buzzmeter_458.png"  alt="Screenshot of Buzzmeter app" />
                         </a>
                     </div>
                     <div class="project col-xs-6">
-                        <h3>Manhunt <span class="description">Feature presentation</span></h3> 
-                        <a href="//www.latimes.com/dorner">
+                        <h3 class="project-name">Manhunt <span class="description">Feature presentation</span></h3> 
+                        <a class="project-link" href="//www.latimes.com/dorner">
                             <img class="desktop" src="img/portfolio/dorner_458.png" alt="Screenshot of Manhunt longread" />
                         </a>
                     </div>
