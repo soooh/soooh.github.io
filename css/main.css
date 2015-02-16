@@ -11,9 +11,9 @@ h1 {
     text-align: center;
 }
 .info {
-    margin: 0 auto 1.25em;
-    color: #000; 
-    font: 300 14px "Roboto", Arial, sans-serif; 
+    margin: 0 auto 2em;
+    color: #000;
+    font: 300 12px/1.5em "Roboto", Arial, sans-serif;
     text-align: center;
 }
 .info a {
