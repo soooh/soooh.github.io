@@ -8,6 +8,7 @@ a {
 
 h1 {
     font: 100 50px "Roboto", Arial, sans-serif; 
+    margin-bottom: 22px;
     text-align: center;
 }
 .info {
