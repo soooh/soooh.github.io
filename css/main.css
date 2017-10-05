@@ -16,7 +16,7 @@ h1 {
 .info {
     margin: 0 auto 2em;
     color: #000;
-    font: 300 12px/1.5em "Roboto", Arial, sans-serif;
+    font: 400 12px/1.5em "Roboto", Arial, sans-serif;
     text-align: center;
 }
 .info a {
@@ -63,7 +63,7 @@ h1 {
 
 .section-name {
     margin: 1em 0 2em;
-    font: 300 26px/1.3em "Roboto", Arial, sans-serif; 
+    font: 400 26px/1.3em "Roboto", Arial, sans-serif; 
     text-align: center;
 }
 .project {
@@ -84,7 +84,7 @@ h1 {
 }
 .description {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .project img {
     width: 100%;
