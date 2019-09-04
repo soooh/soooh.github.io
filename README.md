@@ -1,3 +1,1 @@
-soooh.github.io
-===============
-A simple portfolio at sooOh.io.
+A simple portfolio at soooh.net
